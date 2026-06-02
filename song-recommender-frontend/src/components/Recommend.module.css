@@ -1,0 +1,179 @@
+.navBar {
+    width: 100vw;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+}
+
+.imageWrapper {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageLogo {
+    width: 60%;
+    height: auto;
+}
+
+.profile {
+    margin-left: auto;
+    width: 20%;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+}
+
+.profile span {
+    color: #000000;
+    font-size: 14px;
+}
+
+.profile button {
+    border: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signInButton {
+    background-color: #725e54;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease;
+}
+
+.signInButton:hover {
+    background-color: #443627;
+}
+
+.signUpButton {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: background-color 0.2s ease;
+}
+
+.signUpButton:hover {
+    background-color: #f5f5f5;
+}
+
+.divider {
+    border: 0.7px solid rgba(0, 0, 0, 0.07);
+    height: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 40px;
+}
+
+.findDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+
+.recommendDiv {
+    border: 1px solid red;
+}
+
+.findText {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.searchText {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 28px;
+}
+
+.recommendText {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.searchBar {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border: 1px solid #d3d3d3;
+    width: 30vw;
+    border-radius: 8px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchResult {
+    width: 30vw;
+    height: auto;
+    border: 1px solid #d3d3d3;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.songBox {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.songBox:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.songBox:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.songBox:hover {
+    background-color: #EFEFEF;
+}
+
+.songBox img {
+    border-radius: 8px;
+}
+
+.barDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.songName {
+    margin-bottom: 2px;
+    font-size: 16px;
+    display: block;
+}
+
+.songArtist {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 22vw; 
+    font-size: 12px;
+    color: #646464;
+}
