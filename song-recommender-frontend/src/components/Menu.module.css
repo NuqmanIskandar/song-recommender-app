@@ -1,0 +1,24 @@
+.navBar {
+    width: 100vw;
+    height: 60px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.imageWrapper {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageLogo {
+    width: 60%;
+    height: auto;
+}
+
+.profile {
+    margin-left: auto;
+    margin-right: 24px;
+}
