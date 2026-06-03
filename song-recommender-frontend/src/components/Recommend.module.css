@@ -71,18 +71,20 @@
     display: flex;
     justify-content: center;
     gap: 10%;
-    padding: 40px;
+    padding: 60px;
 }
 
 .findDiv {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*border: 1px solid red;*/
+    justify-content: flex-start;
+    width: 30vw;
+    flex-shrink: 0;
 }
 
 .recommendDiv {
-    border: 1px solid red;
+    width: 44vw;
+    flex-shrink: 0;
 }
 
 .findText {
@@ -107,10 +109,10 @@
     padding: 8px;
     border: none;
     border: 1px solid #d3d3d3;
-    width: 30vw;
     border-radius: 8px;
     color: #474747;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 input:focus {
@@ -118,7 +120,7 @@ input:focus {
 }
 
 .searchResult {
-    width: 30vw;
+    width: 100%;
     height: auto;
     border: 1px solid #d3d3d3;
 
@@ -158,6 +160,8 @@ input:focus {
 
 .songBox img {
     border-radius: 8px;
+    width: 60px;
+    height: auto;
 }
 
 .barDiv {
@@ -171,6 +175,10 @@ input:focus {
     margin-bottom: 2px;
     font-size: 16px;
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 22vw;
 }
 
 .songArtist {
@@ -178,7 +186,7 @@ input:focus {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 22vw; 
+    max-width: 22vw;
     font-size: 12px;
     color: #646464;
 }
@@ -188,7 +196,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 100%;
     padding: 8px 8px;
     background-color: #d5dcf9;
     border: 1px solid #a7b0ca;
@@ -229,4 +237,42 @@ input:focus {
 .removeButton:hover {
   background-color: #e53e3e;
   color: #ffffff;
+}
+
+.errorText {
+    margin-top: 20px;
+}
+
+.recList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 28px;
+    gap: 12px;
+}
+
+.preview {
+    margin-left: auto;
+    padding-left: 12px;
+}
+
+.songRecBox {
+    width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+}
+
+.songRecBox img {
+    width: 60px;
+    height: auto;
+}
+
+.recList .songName {
+    max-width: 16vw;
+}
+
+.recList .songArtist {
+    max-width: 16vw;
 }
