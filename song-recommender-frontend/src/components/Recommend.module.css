@@ -267,6 +267,7 @@ input:focus {
 .songRecBox img {
     width: 60px;
     height: auto;
+    border-radius: 8px;
 }
 
 .recList .songName {
