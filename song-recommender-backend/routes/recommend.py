@@ -17,7 +17,7 @@ def recommend(track_name: str, artist: str = None):
             detail=f"'{track_name}' not found in database. Try a different song."
         )
 
-    results = get_recommendations(conn, song)
+    results = get_recommendations(conn, song, n=5)
     conn.close()
 
     return RecommendResponse(input=track_name, recommendations=results)
