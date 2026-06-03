@@ -138,13 +138,18 @@ input:focus {
     cursor: pointer;
 }
 
+.songBox:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
 .songBox:last-child {
     border-bottom: none;
     border-radius: 0 0 8px 8px;
 }
 
-.songBox:first-child {
-    border-radius: 8px 8px 0 0;
+.songBox:only-child {
+  border-bottom: none;
+  border-radius: 8px;
 }
 
 .songBox:hover {
@@ -176,4 +181,52 @@ input:focus {
     max-width: 22vw; 
     font-size: 12px;
     color: #646464;
+}
+
+.selectedSong {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding: 8px 8px;
+    background-color: #d5dcf9;
+    border: 1px solid #a7b0ca;
+    border-radius: 8px;
+}
+
+.selectedSong img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.selectedDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 2px solid #e53e3e;
+  background-color: transparent;
+  color: #e53e3e;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.removeButton:hover {
+  background-color: #e53e3e;
+  color: #ffffff;
 }
