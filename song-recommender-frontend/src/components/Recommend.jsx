@@ -2,8 +2,12 @@ import styles from "./Recommend.module.css"
 import matchLogo from '../assets/match_logo-cropped.svg'
 import imgPlaceholder from '../assets/picture-placeholder.svg'
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+
 
 const Recommend = () => {
+
+    const navigate = useNavigate()
 
     const [query, setQuery] = useState("top hits 2026")
     const [songs, setSongs] = useState([])
@@ -97,8 +101,8 @@ const Recommend = () => {
                     <div className={styles.profile}>
                         <span>Demo</span>
                         <span className={styles.divider}></span>
-                        <button className={styles.signUpButton}>Sign Up</button>
-                        <button className={styles.signInButton}>Sign In</button>
+                        <button className={styles.signUpButton} onClick={() => navigate("/about")}>Sign Up</button>
+                        <button className={styles.signInButton} onClick={() => navigate("/about")}>Sign In</button>
                     </div>
                 </div>
 

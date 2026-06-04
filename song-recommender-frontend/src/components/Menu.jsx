@@ -17,8 +17,8 @@ const Menu = () => {
                     <div className={styles.profile}>
                         <span>Demo</span>
                         <span className={styles.divider}></span>
-                        <button className={styles.signUpButton}>Sign Up</button>
-                        <button className={styles.signInButton}>Sign In</button>
+                        <button className={styles.signUpButton} onClick={() => navigate("/about")}>Sign Up</button>
+                        <button className={styles.signInButton} onClick={() => navigate("/about")}>Sign In</button>
                     </div>
                 </div>
                 <div className={styles.canvasWrapper}>
@@ -30,7 +30,7 @@ const Menu = () => {
                             </div>
                             <div className={styles.infoButtonDiv}>
                                 <button className={styles.startButton} onClick={() => navigate("/start")}>Start Now</button>
-                                <button className={styles.learnButton}>Learn More</button>
+                                <button className={styles.learnButton} onClick={() => navigate("/about")}>Learn More</button>
                             </div>
                         </div>
                     </div>
